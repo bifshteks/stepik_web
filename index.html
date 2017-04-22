@@ -1,0 +1,199 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Расписание</title>
+		<style>
+				select{
+					border-radius: 5px;
+					box-shadow: 0 0 50px #ffffff;
+					background-color: #000;
+					color: white;
+					
+				}
+				
+				.get_datelist{
+					border-radius: 8px;
+					background-color: black;-->
+					color: white;
+					border: 0px;
+					padding: 4px;
+					box-shadow: 0 0 10px white;
+				}
+				
+				body{
+					background-image: url("http://weblabfon.com/_ld/2/244_wood05.jpg");
+					background-repeat: repeat;
+				}
+
+				.font{
+					font-family: cursive;
+					color: white;
+					text-shadow: black 2px 2px 7px,
+							black 2px 2px 7px,
+							black 2px 2px 7px;
+				}
+				
+				#form{
+					padding-top: 50px;
+				}
+
+				.header{
+					background-image: url(logo.png);
+					background-repeat: no-repeat;
+					background-position: 0% 50%;
+					background-size: contain;
+					padding: 60px;
+					position: absolute;
+					width: 200px;
+					height: 400px;
+
+					
+				}
+				
+				.head-text{
+					width: 50%;
+					position: relative;
+					height: 100px;
+					font-size: 60px;
+				}
+		
+				td{
+					padding-bottom: 20px;
+					text-align: right;
+					position: relative;
+				}
+
+				#td2{
+					padding-bottom: 20px;
+					text-align: left;
+				}
+				
+				#td3{
+					padding-bottom: 45px;
+				}
+				
+			</style>
+	</head>
+	
+	<body>
+	
+		<div class="header">
+			</div>
+		<span class="head-text font">Расписание&nbspг. №107\Б </span>
+		
+		<table>
+		<tr>
+		<td id="td1">
+		<div id="form">
+			<form action="/home/box/web/cgi-bin/form.py">
+				<b id="qwe" class="font">Месяц:</b>
+				<select name="Month">
+					<option value="Январь" selected>Январь</option>
+					<option value="Февраль">Февраль</option>
+					<option value="Март">Март</option>
+					<option value="Апрель">Апрель</option>
+					<option value="Май">Май</option>
+					<option value="Июнь">Июнь</option>
+					<option value="Июль">Июль</option>
+					<option value="Август">Август</option>
+					<option value="Сентябрь">Сентябрь</option>
+					<option value="Октябрь">Октябрь</option>
+					<option value="Ноябрь">Ноябрь</option>
+					<option value="Декабрь">Декабрь</option>
+					
+				</select>
+		</td>
+		</tr>
+<!--<br/><br/>-->
+		<tr>
+		<td id="td2">	
+				<b class="font">День:</b>
+<!--<br/><p>-->
+		</tr>
+		</td>
+		<tr>
+		<td id="td3">
+				<b class="font">от</b> 
+				<select name="Day_from" class="days">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+					<option value="13">13</option>
+					<option value="14">14</option>
+					<option value="15">15</option>
+					<option value="16">16</option>
+					<option value="17">17</option>
+					<option value="18">18</option>
+					<option value="19">19</option>
+					<option value="20">20</option>
+					<option value="21">21</option>
+					<option value="22">22</option>
+					<option value="23">23</option>
+					<option value="24">24</option>
+					<option value="25">25</option>
+					<option value="26">26</option>
+					<option value="27">27</option>
+					<option value="28">28</option>
+					<option value="29">29</option>
+					<option value="30">30</option>
+					<option value="31">31</option>
+				</select>
+				&nbsp <b class="font">до</b> 
+				<select name="Day_to" class="days">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+					<option value="13">13</option>
+					<option value="14">14</option>
+					<option value="15">15</option>
+					<option value="16">16</option>
+					<option value="17">17</option>
+					<option value="18">18</option>
+					<option value="19">19</option>
+					<option value="20">20</option>
+					<option value="21">21</option>
+					<option value="22">22</option>
+					<option value="23">23</option>
+					<option value="24">24</option>
+					<option value="25">25</option>
+					<option value="26">26</option>
+					<option value="27">27</option>
+					<option value="28">28</option>
+					<option value="29">29</option>
+					<option value="30">30</option>
+					<option value="31">31</option>
+				</select>
+		</tr>
+		</td>
+<!--</p><br/><br/>-->
+		<tr>
+		<td id="td4">
+				<input type="submit" value="Получить расписание" class="get_datelist font">
+		</tr>
+		</td>
+			</form>
+		</div>
+		</table>
+
+	</body>
+</html>
+
